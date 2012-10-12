@@ -1,0 +1,72 @@
+Overview
+========
+
+This is a very simple utility that can show if it is cheaper to wait to be
+paid after x number of days and possibly go into overdraft and pay interest
+or if it would be better to get paid immediately by card but pay the merchant
+service charge.
+
+
+How it Works
+============
+
+To do this, it needs five pieces of information.
+
+    1) The amount. This would be the amount of the invoice and the amount
+       that you would be in overdraft and paying interest on.
+
+    2) Interest Rate. The rate of interest you are charged by the bank on
+       your overdraft. This will just be a yearly rate.
+
+    3) Interest Type. This is how the bank calculates the interest. It will
+       be one of two ways.
+
+	* EAR. This is the Effective Annual Rate. It is defined as;
+
+			r = (1 + i/n)^n - 1
+
+	       Where i is the nominal rate (aka APR) and n is the
+	       compounding frequency.
+
+	* APR. This is the Annual Percentage Rate. This can be defined in
+	       terms of the EAR as:
+
+			r = n * ((1 + EAR)^(1/n) - 1)
+
+	See do_calc() for how these are actually calculated.
+
+    4) Payment Terms. This is how long it takes you to get paid in days.
+
+    5) Merchant Service Charge. This is how much you'd be charged for card
+       transactions. This is a one off percentage charge per transaction.
+
+Given this information, it will then tell you how much interest you would
+pay on the amount over the period given. It will also tell you what you'd
+pay for the merchant service charge.
+
+Lastly it will work out at what point the interest charges and merchant
+service charge converge and give you this in days. For a given EAR it
+can work this out exactly. For an APR it can approximate it to within a
+day.
+
+
+Caveats
+=======
+
+This will likely only work for UK banks. Also, it doesn't take into account
+monthly charges for being in overdraft etc.
+
+It doesn't do anything special with leap years.
+
+
+Building / Running
+==================
+
+See INSTALL
+
+
+License
+=======
+
+This application is licensed under the GNU General Public License version 2.
+See COPYING

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=cashflo
+Comment=Interest Calculator
+Exec=cashflo
+Terminal=false
+Type=Application
+Categories=Office;
+MimeType=text/plain;
+Icon=cashflo

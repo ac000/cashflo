@@ -1,0 +1,35 @@
+Linux
+=====
+
+To simply build and run
+
+    $ make
+    $ ./cashflo
+
+
+There is a rpm specfile that you can use to create an rpm, or just install
+one of the pre-built packages.
+
+
+Windows
+=======
+
+Under Linux, using the MinGW32 cross compiler tools, you can create a
+Windows PE32 executable.
+
+    $ ./mingw-make.sh
+
+This will create a cashflo.exe file that you can copy over to windows
+along with the cashflo.glade & README files. Put them all in the same
+directory.
+
+You will also need the Windows GTK3 runtime. While there is no official
+release yet, you can grab a build from (grab the _runtime_ package).
+
+    http://tarnyko.net/en/?q=node/1
+
+Direct link:
+
+    http://www.tarnyko.net/repo/GTK+-Runtime-3.4.2_(TARNYKO).exe
+
+This has been tested under WINE and in a Windows XP VM.
