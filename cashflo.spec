@@ -42,5 +42,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README COPYING
 
 %changelog
-* Oct 12 2012 Andrew Clayton <andrew@opentechlabs.co.uk> - 001-1.otl
+* Fri Oct 12 2012 Andrew Clayton <andrew@opentechlabs.co.uk> - 001-1.otl
 - Initial release
