@@ -8,6 +8,8 @@
     <property name="program_name">cashflo</property>
     <property name="version">001</property>
     <property name="copyright" translatable="yes">Copyright © 2012	OpenTech Labs</property>
+    <property name="website">https://github.com/opentechlabs/cashflo</property>
+    <property name="website_label" translatable="yes">https://github.com/opentechlabs/cashflo</property>
     <property name="authors">Andrew Clayton
 John A. Clayton
 Russell Green</property>
