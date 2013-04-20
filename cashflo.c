@@ -2,7 +2,7 @@
  * cashflo.c - Is it better to be in overdraft or pay the MSC
  *
  * Copyright (C) 2012-2013	OpenTech Labs
- * 				Andrew Clayton <andrew@opentechlabs.co.uk>
+ * 				Andrew Clayton <andrew@digital-domain.net>
  *
  * Released under the GNU General Public License version 2.
  * See COPYING
